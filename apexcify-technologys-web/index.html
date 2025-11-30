@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d0f17" />
+    <meta
+      name="description"
+      content="Apexcify Technologies — internships, skills development and IT services. Dark theme responsive site with animations, filters and lightbox."
+    />
+    <title>Apexcify Technologies - Dark Theme</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234da3ff'/><text x='50' y='57' font-size='50' text-anchor='middle' fill='white' font-family='Arial'>A</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <h1 style="margin: 0; font-size: 14px">Apexcify Technologies</h1>
+          <div style="font-size: 11px; color: var(--muted); margin-top: 2px">
+            Polish your skills • Launch your career
+          </div>
+        </div>
+      </div>
+      <nav>
+        <a href="#vision">Vision</a>
+        <a href="#services">Services</a>
+        <a href="#internships">Internships</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <h2>Welcome to Apexcify Technologies</h2>
+        <p class="lead">
+          We bridge the gap between academic knowledge and industry requirements
+          — internships, skill development and real-world projects that attract
+          employers.
+        </p>
+        <div class="cta">
+          <button
+            class="btn"
+            onclick="document.getElementById('internships').scrollIntoView({behavior:'smooth'})"
+          >
+            Explore Internships
+          </button>
+          <button
+            class="btn secondary"
+            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+      <div
+        style="
+          padding: 18px;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.02),
+            transparent
+          );
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <img
+          src="./Profile.jpg"
+          alt="Apexcify banner"
+          style="width: 100%; border-radius: 10px; display: block"
+        />
+      </div>
+    </section>
+
+    <section id="vision" class="section fade-up">
+      <h2 class="section-title">Our Vision</h2>
+      <p class="lead">
+        To create a community of talented and motivated individuals who are
+        passionate about innovation and excellence. We give hands-on experience
+        and mentorship to launch careers in tech.
+      </p>
+    </section>
+
+    <section id="services" class="section fade-up">
+      <h2 class="section-title">Our Services</h2>
+      <p class="lead">
+        IT services & consulting, internship placements and skills development
+        with mentorship and practical projects.
+      </p>
+      <div class="grid" style="margin-top: 20px">
+        <div class="card">
+          <div style="display: flex; gap: 12px; align-items: center">
+            <div class="icon-circle">IT</div>
+            <div>
+              <h3>IT Services & Consulting</h3>
+              <p>
+                Expertise to help businesses achieve their technology goals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="display: flex; gap: 12px; align-items: center">
+            <div class="icon-circle">IN</div>
+            <div>
+              <h3>Internship Program</h3>
+              <p>
+                Real-world projects, mentorship and employability-focused
+                training.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="display: flex; gap: 12px; align-items: center">
+            <div class="icon-circle">SK</div>
+            <div>
+              <h3>Skills Development</h3>
+              <p>Technical workshops, soft skills and interview preparation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="internships" class="section fade-up">
+      <h2 class="section-title">Internships</h2>
+      <div class="filters" aria-hidden="false">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="frontend">Frontend</button>
+        <button class="chip" data-filter="backend">Backend</button>
+        <button class="chip" data-filter="data">Data</button>
+        <button class="chip" data-filter="ai">AI/ML</button>
+        <button class="chip" data-filter="design">Design</button>
+      </div>
+
+      <div class="grid" id="internshipGrid">
+        <div
+          class="card lightbox-trigger"
+          data-category="frontend"
+          data-img="/mnt/data/sample1.jpg"
+        >
+          <i class="fa-solid fa-code"></i>
+          <h3>Frontend Development</h3>
+          <p>Build responsive UIs, modern web tooling and animations.</p>
+        </div>
+
+        <div
+          class="card lightbox-trigger"
+          data-category="backend"
+          data-img="/mnt/data/sample2.jpg"
+        >
+        <i class="fa-solid fa-server"></i>
+          <h3>Backend Development</h3>
+          <p>Learn to build robust APIs, databases and server-side logic.</p>
+        </div>
+
+        <div
+          class="card lightbox-trigger"
+          data-category="ai"
+          data-img="/mnt/data/sample3.jpg"
+        >
+        <i class="fa-solid fa-hexagon-nodes"></i>
+          <h3>Artificial Intelligence</h3>
+          <p>Work on ML projects, data modeling and model deployment.</p>
+        </div>
+
+        <div
+          class="card lightbox-trigger"
+          data-category="data"
+          data-img="/mnt/data/sample4.jpg"
+        >
+        <i class="fa-solid fa-database"></i>
+          <h3>Data Science</h3>
+          <p>Data collection, cleaning and analysis to drive decisions.</p>
+        </div>
+
+        <div
+          class="card lightbox-trigger"
+          data-category="design"
+          data-img="/mnt/data/sample5.jpg"
+        >
+        <i class="fa-solid fa-palette"></i>
+          <h3>Graphic Designing</h3>
+          <p>Visual design, product mockups and brand assets.</p>
+        </div>
+
+        <div
+          class="card lightbox-trigger"
+          data-category="frontend"
+          data-img="/mnt/data/sample6.jpg"
+        >
+        <i class="fa-brands fa-android"></i>
+          <h3>App Development</h3>
+          <p>Mobile UI/UX, native features and cross-platform tooling.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="section fade-up">
+      <h2 class="section-title">Contact Us</h2>
+      <form
+        onsubmit="event.preventDefault(); alert('Message sent — demo only')"
+      >
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="text" placeholder="Phone Number" />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <div
+          style="
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 6px;
+          "
+        >
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div>© Apexcify Technologies — All Rights Reserved</div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
